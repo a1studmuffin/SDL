@@ -51,6 +51,7 @@ android_egl_context_restore()
         event.type = SDL_RENDER_DEVICE_RESET;
         SDL_PushEvent(&event);
     }
+    Android_Window->surface_valid = SDL_FALSE;
 }
 
 static void 
